@@ -1183,7 +1183,8 @@ body {
   font-weight: inherit;
   font-style: inherit;
   font-size: 100%;
-  font-family: inherit; }
+  font-family: inherit;
+  margin: auto; }
   body::before, body::after {
     content: ' ';
     display: table; }
@@ -1228,6 +1229,8 @@ body {
         padding-right: 0.9375rem; } }
     #hero .heroTextContainer:last-child:not(:first-child) {
       float: right; }
+    #hero .heroTextContainer .heroDescription {
+      margin: 0; }
   #hero .cartButtonBox {
     width: 33.33333%;
     float: left;
@@ -1264,84 +1267,70 @@ body {
   #products::after {
     clear: both; }
   #products .productItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     width: 33.33333%;
     float: left;
     padding-left: 0.625rem;
     padding-right: 0.625rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
     background-color: #e5e5e5;
     text-align: center;
     border: 2px solid #bebebe;
     margin-top: 10px;
     margin-right: 10px;
-    min-height: 300px;
+    min-height: 325px;
     max-width: 300px;
     padding: 30px; }
-    @media (max-width: 1032px) {
-      #products .productItem {
-        display: block;
-        width: 50%;
-        float: left;
-        padding-left: 0.625rem;
-        padding-right: 0.625rem; } }
-  @media screen and (max-width: 1032px) and (min-width: 40em) {
-    #products .productItem {
-      padding-left: 0.9375rem;
-      padding-right: 0.9375rem; } }
-    @media (max-width: 1032px) {
-        #products .productItem:last-child:not(:first-child) {
-          float: right; } }
     @media screen and (min-width: 40em) {
       #products .productItem {
         padding-left: 0.9375rem;
         padding-right: 0.9375rem; } }
     #products .productItem:last-child:not(:first-child) {
       float: right; }
-  #products .descriptors {
-    max-width: 75rem;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: .65em;
-    width: 75%;
-    padding-bottom: 20px; }
-    #products .descriptors::before, #products .descriptors::after {
-      content: ' ';
-      display: table; }
-    #products .descriptors::after {
-      clear: both; }
-  #products .image {
-    max-width: 75rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px; }
-    #products .image::before, #products .image::after {
-      content: ' ';
-      display: table; }
-    #products .image::after {
-      clear: both; }
-  #products .pricing {
-    max-width: 75rem;
-    margin-left: auto;
-    margin-right: auto; }
-    #products .pricing::before, #products .pricing::after {
-      content: ' ';
-      display: table; }
-    #products .pricing::after {
-      clear: both; }
-  #products .viewBtn {
-    max-width: 75rem;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #b7b7b7;
-    padding: 10px 10px;
-    text-align: center;
-    border: 1px solid black;
-    font-size: .75em;
-    width: 85%; }
-    #products .viewBtn::before, #products .viewBtn::after {
-      content: ' ';
-      display: table; }
-    #products .viewBtn::after {
-      clear: both; }
+    #products .productItem .descriptors {
+      max-width: 75rem;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: .65em;
+      width: 75%;
+      padding-bottom: 20px; }
+      #products .productItem .descriptors::before, #products .productItem .descriptors::after {
+        content: ' ';
+        display: table; }
+      #products .productItem .descriptors::after {
+        clear: both; }
+    #products .productItem .image {
+      max-width: 75rem;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 10px; }
+      #products .productItem .image::before, #products .productItem .image::after {
+        content: ' ';
+        display: table; }
+      #products .productItem .image::after {
+        clear: both; }
+    #products .productItem .pricing {
+      max-width: 75rem;
+      margin-left: auto;
+      margin-right: auto; }
+      #products .productItem .pricing::before, #products .productItem .pricing::after {
+        content: ' ';
+        display: table; }
+      #products .productItem .pricing::after {
+        clear: both; }
+    #products .productItem .viewBtn {
+      max-width: 75rem;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #b7b7b7;
+      padding: 10px 10px;
+      text-align: center;
+      border: 1px solid black;
+      font-size: .75em;
+      width: 85%; }
+      #products .productItem .viewBtn::before, #products .productItem .viewBtn::after {
+        content: ' ';
+        display: table; }
+      #products .productItem .viewBtn::after {
+        clear: both; }

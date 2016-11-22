@@ -1,0 +1,22 @@
+{
+  "name": "lowes_assessment",
+  "version": "1.0.0",
+  "description": "Code test for Lowe's",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/urnmo/Lowes_assesment.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/urnmo/Lowes_assesment/issues"
+  },
+  "homepage": "https://github.com/urnmo/Lowes_assesment#readme",
+  "dependencies": {
+    "foundation-sites": "^6.2.4"
+  }
+}

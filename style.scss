@@ -2,6 +2,10 @@
 
 @include foundation-global-styles;
 @include foundation-grid;
+$breakpoint-medium: 1032px;
+
+
+
 
 body {
     @include grid-row();
@@ -17,21 +21,25 @@ body {
         @include grid-row();
         border: 2px solid #bebebe;
         background-color: #e5e5e5;
-        max-width: 1022px;
+        max-width: 1035px;
         align-items: center;
 
     .heroImageContainer{
         @include grid-column(3);
-        margin-top: 10px;
+        margin: 10px 0 10px;
     }
 
     .heroTextContainer{
         @include grid-column(5);
-        margin-top: 10px;
-        font-size: .85em;
+        margin: 10px 0;
+        font-size: .85em; 
+        overflow: scroll;    
+        max-height: 150px; 
+ 
 
     .heroDescription{
-        margin: 0;
+        margin: 0;  
+
     }
     }
     .cartButtonBox{
@@ -55,32 +63,29 @@ body {
     }
     }
 
-#products{
+    #products{
         @include grid-row();
         max-width: 1035px;
-        box-sizing: content-box;
-
-
 
     .productItem{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        @include grid-column(4);
-        background-color: #e5e5e5;
-        text-align: center;
-        border: 2px solid #bebebe;
-        margin-top: 10px;
-        margin-right: 10px;
-        min-height: 325px;
-        max-width: 300px;
-        padding: 30px;
+
+     @include grid-column(12);
+        @media(min-width: $breakpoint-medium){
+           @include grid-column(4);   
+           };
+
+       background-color: #e5e5e5 ;
+       text-align: center;
+       border: 2px solid #bebebe ;
+       padding: 30px;
+       margin-top: 10px;
     
     .descriptors{
         @include grid-row();
         font-size: .65em;
         width:75%;
         padding-bottom: 20px;
+        max-height: 30px;
     }
 
     .image{        
@@ -88,8 +93,8 @@ body {
         margin-top: 10px;
     }
 
-.pricing{
- @include grid-row();
+    .pricing{
+         @include grid-row();
 
 }
     .viewBtn{
@@ -104,6 +109,3 @@ body {
     }
     }
 }
-
-
-   

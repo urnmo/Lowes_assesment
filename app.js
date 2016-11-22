@@ -79,7 +79,7 @@ function getInfo() {
 
 
             //creating the smaller product section
-            section.className = "productItem";
+            section.className = "productItem clearfix";
 
             //adding images
             let image = document.createElement("img");
